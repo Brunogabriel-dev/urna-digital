@@ -15,6 +15,9 @@ body {
   width: 450px;
   height: 320px;
   background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+  border: 3px solid #555;
+  display: flex;
+  flex-direction: column;
 }
 
 .teclado {
@@ -25,6 +28,7 @@ body {
 .teclado--linha {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .teclado--botao {
@@ -59,4 +63,15 @@ body {
   font-size: 15px;
   width: 90px;
   height: 50px;
+}
+
+.d-1 {
+  flex: 1;
+}
+
+.d-2 {
+  height: 50px;
+  font-size: 14px;
+  border-top: 3px solid #000 ;
+  padding-left: 10px;
 }
