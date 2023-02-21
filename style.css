@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .urna {
@@ -15,5 +18,23 @@ body {
 }
 
 .teclado {
+  margin-left: 30px;
   background-color: #403a3a;
+}
+
+.teclado--linha {
+  display: flex;
+  justify-content: center;
+}
+
+.teclado--botao {
+  width: 50px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
