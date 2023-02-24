@@ -12,6 +12,10 @@ function comecarEtapa() {
 
   let numeroHtml = '';
 
+  for(let i=0;i<etapa.numeros;i++) {
+    numeroHtml += '<div class="numero"></div>';
+  }
+
   seuVotoPara.style.display = 'none';
   cargo.innerHTML = etapa.titulo;
   descricao.innerHTML = '';
@@ -33,3 +37,5 @@ function corrige(){
 function confirma(){
   alert("Clicou em CONFIRMA!");
 }
+
+comecarEtapa();
