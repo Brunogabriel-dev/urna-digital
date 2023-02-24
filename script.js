@@ -29,7 +29,8 @@ function comecarEtapa() {
   numeros.innerHTML = numeroHtml;
 }
 function atualizaInterface() {
-
+  console.log("Atualizando Interface");
+  console.log(numero);
 }
 
 function clicou(n) {
@@ -37,6 +38,13 @@ function clicou(n) {
   if(elNumero !== null) {
     elNumero.innerHTML = n;
     numero = `${numero}${n}`;
+
+    elNumero.classList.remove('pisca');
+    if(elNumero.nextElementSibling !== null) {
+        elNumero.nextElementSibling.classList.add('pisca');
+    }else {
+      atualizaInterface();
+    }
   }
 }
 function branco(){
