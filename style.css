@@ -129,6 +129,16 @@ body {
   width: 90px;
 }
 
+.d-1-image {
+  border: 1px solid #000;
+  background-color: #fff;
+  text-align: center;
+}
+
+.d-1-image img {
+  width: 100%;
+}
+
 .d-2 {
   height: 50px;
   font-size: 14px;
