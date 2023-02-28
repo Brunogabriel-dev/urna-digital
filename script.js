@@ -29,8 +29,7 @@ function comecarEtapa() {
   numeros.innerHTML = numeroHtml;
 }
 function atualizaInterface() {
-  console.log("Atualizando Interface");
-  console.log(numero);
+  
 }
 
 function clicou(n) {
