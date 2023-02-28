@@ -29,7 +29,10 @@ function comecarEtapa() {
   numeros.innerHTML = numeroHtml;
 }
 function atualizaInterface() {
-  
+  let etapa = etapas[etapaAtual];
+  let candidato = etapa.candidatos.filter((item)=>{
+
+  });
 }
 
 function clicou(n) {
