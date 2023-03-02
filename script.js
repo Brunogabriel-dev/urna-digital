@@ -7,14 +7,14 @@ let numeros = document.querySelector('.d-1-3');
 
 let etapaAtual = 0;
 let numero = '';
-let branco = true;
+let votoBranco = false;
 
 function comecarEtapa() {
   let etapa = etapas[etapaAtual];
 
   let numeroHtml = '';
   numero = '';
-  branco = false;
+  votoBranco = false;
 
   for(let i=0;i<etapa.numeros;i++) {
     if(i=== 0) {
@@ -75,7 +75,12 @@ function clicou(n) {
 }
 function branco(){
   if(numero === '') {
-    branco = true;
+    votoBranco = true;
+    seuVotoPara.style.display = 'block';
+    aviso.style.display = 'block';
+    numeros.innerHTML = '';
+    descricao.innerHTML = '<div class="aviso--grande pisca">VOTO BRANCO</div>';
+
   }
 }
 function corrige(){
